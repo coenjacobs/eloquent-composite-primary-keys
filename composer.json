@@ -1,0 +1,22 @@
+{
+    "name": "coenjacobs/eloquent-composite-primary-keys",
+    "description": "Offers composite primary keys on Eloquent models",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Coen Jacobs",
+            "email": "coenjacobs@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "illuminate/database": "^5.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "CoenJacobs\\EloquentCompositePrimaryKeys\\": "src/"
+        }
+    }
+}
