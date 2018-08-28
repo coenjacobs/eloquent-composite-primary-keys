@@ -1,7 +1,7 @@
 # Eloquent Composite Primary Keys
 A single trait to implement in your Eloquent models to support composite primary keys. The Laravel Schema builder supports creating composite primary keys, but Eloquent models don't support it.
 
-This package is largely inspired by [suggested code on Stack Exchange](https://www.youtube.com/watch?v=MKCu610bfJg) and has also been released in a package with more than this functionality. I needed a separate package for just this purpose.
+This package is largely inspired by [suggested code on Stack Exchange](https://stackoverflow.com/a/36995763/526501) and has also been released in a package with more than this functionality. I needed a separate package for just this purpose.
 
 ## Install
 Install this package through Composer:
