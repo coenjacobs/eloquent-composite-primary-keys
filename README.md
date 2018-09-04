@@ -6,7 +6,7 @@ This package is largely inspired by [suggested code on Stack Exchange](https://s
 ## Install
 Install this package through Composer:
 ```
-composer install coenjacobs/eloquent-composite-primary-keys
+composer require coenjacobs/eloquent-composite-primary-keys
 ```
 
 Make sure you have a database schema that supports composite primary keys, for example via a migration:
