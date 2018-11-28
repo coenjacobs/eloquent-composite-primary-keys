@@ -32,7 +32,7 @@ trait HasCompositePrimaryKey
                 throw new Exception(__METHOD__ . 'Missing part of the primary key: ' . $key);
             }
 
-            $query->where($key, '=', $this->$key);
+            $query->where($key, '=', $this->original[$key] ?? $this->$key);
         }
 
         return $query;
