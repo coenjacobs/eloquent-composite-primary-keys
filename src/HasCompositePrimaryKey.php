@@ -56,4 +56,27 @@ trait HasCompositePrimaryKey
 
         return $query->first($columns);
     }
+
+    /**
+     * Get the primary keys value for a save query.
+     *
+     * @return mixed
+     */
+    protected function getKeyForSaveQuery()
+    {
+        return $this->getKey();
+    }
+    
+    /**
+     * Get the value of the model's primary keys.
+     *
+     * @return mixed
+     */
+    public function getKey()
+    {
+        return array_reduce($this->getKeyName(), function ($result, $item) {
+            $result[$item] = $this->getAttribute($item);
+            return $result;
+        }, array());
+    }
 }
