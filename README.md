@@ -3,6 +3,11 @@ A single trait to implement in your Eloquent models to support composite primary
 
 This package is largely inspired by [suggested code on Stack Exchange](https://stackoverflow.com/a/36995763/526501) and has also been released in a package with more than this functionality. I needed a separate package for just this purpose.
 
+## IMPORTANT: This is now read-only
+I have decided to make this project read-only and not further work on this. There are a bunch of performance related downsides when doing this in Laravel, which make it no longer fun and rewarding for me to work on.
+
+In case you still want to use this functionality in Laravel, you can have a look at the [LaravelTreats package](https://github.com/mopo922/LaravelTreats/tree/master/src/Model#laraveltreatsmodeltraitshascompositprimarykey) which contains similar functionality.
+
 ## Install
 Install this package through Composer:
 ```
